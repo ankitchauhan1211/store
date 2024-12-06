@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: cursive;
+
+}
+
+.navbar{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: #d09f8b;
+    justify-content: space-between;
+    position: absolute;
+    
+    
+
+}
+.navbar .profile img{
+    
+    height: 30px;
+    width: 30px;
+    
+    cursor: pointer;
+    
+}
+.profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: 2px solid red;
+    margin: 3px;
+    
+    
+
+}
+.navbar ul{
+    display: flex;
+    
+}
+.navbar ul li{
+    list-style: none;
+    padding:  4px ;
+    margin: 5px ;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.navbar ul li a:hover{
+    color:#f54545
+}
+
+.logo{
+    display: none;
+
+}
+.pd2{
+    height: 350px;
+    width: 100%;
+    background-color: aqua;
+    background-image: url("pd2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    
+
+}
+.pd2 h1{
+    padding: 50px;
+    margin: 3px;
+    color: #dccac3;
+}
+.pd2 button{
+     border: none;
+     padding: 10px;
+     margin: 3px;
+     border-radius: 10px;
+     background-color: #eabfbf;
+     cursor: pointer;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: " burger burger cold-drink cold-drink"
+                         "dosa dosa roll roll";    
+    grid-gap: 3px;
+    width: 100%;
+}
+
+
+.box1{
+    background-color: #bf936d;
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+.box2{
+    background-color: #bf936d;
+    grid-area: cold-drink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.box3{
+    background-color: #bf936d;
+    grid-area: dosa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box4{
+    background-color: #bf936d;
+    grid-area: roll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box1 img{
+    height: 200px;
+    
+    
+}
+.box2 img{
+    height: 200px;
+    
+    
+}
+.box3 img{
+    height: 200px;
+
+}
+.box4 img{
+    height: 200px;
+}
+.btn{
+    padding: 5px;
+    margin: 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dccac3;
+
+}
+@media only screen and (max-width: 700px) {
+
+    .logo{
+        display: block;
+        margin: 3px;
+        padding: 4px 15px;
+        border: none;
+        border-radius: 20px;
+        text-align: center;
+        background-color: #f54545;
+        cursor: pointer;
+        
+    }
+    .pd2{
+        height: 250px;
+        width: 100%;
+        background-color: aqua;
+        background-image: url("pd2.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid black;
+        
+        
+    
+    }
+    .pd2 h1{
+        font-size: px;
+        padding: 0px;
+        margin: 3px;
+    }
+    
+    
+
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-areas: " burger burger" 
+                             "cold-drink cold-drink"
+                             "dosa dosa"
+                             "roll roll";    
+        grid-gap: 4px;
+        width: 100%;
+    
+    }
+    .box1{
+        border: 2px solid black;
+        border-top: none;
+        
+    }
+    .box2{
+        border: 2px solid black;
+        
+    }
+    .box3{
+        border: 2px solid black;
+    
+    }
+    .box4{
+        border: 2px solid black;
+    
+    }
+    .box1 img{
+        height: 100px;
+        width: 200px;
+        border: 2px solid black;
+        
+        
+    }
+    .box2 img{
+        height: 100px;
+        width: 200px;
+        
+
+    }
+    .box3 img{
+        height: 100px;
+        width: 200px;
+        
+    }
+    .box4 img{
+        height: 100px;
+        width: 200px;
+        
+    }
+     .navbar ul{
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        background-color: #d09f8b;
+        text-align: center;
+        display: none;
+    }
+ 
+    
+
+}
